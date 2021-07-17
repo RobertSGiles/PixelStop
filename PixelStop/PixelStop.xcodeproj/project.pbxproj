@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E32D8DBF26A3231F000DE923 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DBE26A3231F000DE923 /* InfoView.swift */; };
+		E32D8DC126A32351000DE923 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DC026A32351000DE923 /* HeaderComponent.swift */; };
+		E32D8DC326A323B4000DE923 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DC226A323B4000DE923 /* TitleModifier.swift */; };
+		E32D8DC526A323F5000DE923 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DC426A323F5000DE923 /* ButtonModifier.swift */; };
+		E32D8DC726A32452000DE923 /* RainbowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DC626A32452000DE923 /* RainbowModifier.swift */; };
+		E32D8DC926A32711000DE923 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DC826A32711000DE923 /* HeaderView.swift */; };
+		E32D8DCB26A328FE000DE923 /* PixelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DCA26A328FE000DE923 /* PixelView.swift */; };
+		E32D8DCD26A32F50000DE923 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DCC26A32F50000DE923 /* AchievementsView.swift */; };
+		E32D8DD126A33606000DE923 /* AchievementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DD026A33606000DE923 /* AchievementsModel.swift */; };
 		E338637E268A2893001B09F2 /* PixelStopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338637D268A2893001B09F2 /* PixelStopApp.swift */; };
 		E3386380268A2893001B09F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338637F268A2893001B09F2 /* ContentView.swift */; };
 		E3386382268A2894001B09F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3386381268A2894001B09F2 /* Assets.xcassets */; };
@@ -16,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E32D8DBE26A3231F000DE923 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		E32D8DC026A32351000DE923 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		E32D8DC226A323B4000DE923 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		E32D8DC426A323F5000DE923 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		E32D8DC626A32452000DE923 /* RainbowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowModifier.swift; sourceTree = "<group>"; };
+		E32D8DC826A32711000DE923 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E32D8DCA26A328FE000DE923 /* PixelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelView.swift; sourceTree = "<group>"; };
+		E32D8DCC26A32F50000DE923 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		E32D8DD026A33606000DE923 /* AchievementsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsModel.swift; sourceTree = "<group>"; };
 		E338637A268A2893001B09F2 /* PixelStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338637D268A2893001B09F2 /* PixelStopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelStopApp.swift; sourceTree = "<group>"; };
 		E338637F268A2893001B09F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +55,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32D8DB8269B28A9000DE923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E338637F268A2893001B09F2 /* ContentView.swift */,
+				E32D8DC826A32711000DE923 /* HeaderView.swift */,
+				E32D8DBE26A3231F000DE923 /* InfoView.swift */,
+				E32D8DCA26A328FE000DE923 /* PixelView.swift */,
+				E32D8DCC26A32F50000DE923 /* AchievementsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E32D8DB9269B28AF000DE923 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E32D8DBA269B29D5000DE923 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E338639A268A5ADA001B09F2 /* StoredValues.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E32D8DBB269B29F6000DE923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E338638C268A2D8B001B09F2 /* ColourModel.swift */,
+				E32D8DD026A33606000DE923 /* AchievementsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E32D8DBC269B29FC000DE923 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				E32D8DC226A323B4000DE923 /* TitleModifier.swift */,
+				E32D8DC426A323F5000DE923 /* ButtonModifier.swift */,
+				E32D8DC626A32452000DE923 /* RainbowModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		E32D8DBD269B2A29000DE923 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E32D8DC026A32351000DE923 /* HeaderComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		E3386371268A2893001B09F2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +128,13 @@
 		E338637C268A2893001B09F2 /* PixelStop */ = {
 			isa = PBXGroup;
 			children = (
+				E32D8DBD269B2A29000DE923 /* Component */,
+				E32D8DB9269B28AF000DE923 /* Helper */,
+				E32D8DBC269B29FC000DE923 /* Modifier */,
+				E32D8DBB269B29F6000DE923 /* Model */,
+				E32D8DBA269B29D5000DE923 /* Data */,
+				E32D8DB8269B28A9000DE923 /* View */,
 				E338637D268A2893001B09F2 /* PixelStopApp.swift */,
-				E338638C268A2D8B001B09F2 /* ColourModel.swift */,
-				E338637F268A2893001B09F2 /* ContentView.swift */,
-				E338639A268A5ADA001B09F2 /* StoredValues.swift */,
 				E3386381268A2894001B09F2 /* Assets.xcassets */,
 				E3386386268A2894001B09F2 /* Info.plist */,
 				E3386383268A2894001B09F2 /* Preview Content */,
@@ -144,9 +219,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32D8DC326A323B4000DE923 /* TitleModifier.swift in Sources */,
+				E32D8DC126A32351000DE923 /* HeaderComponent.swift in Sources */,
+				E32D8DC526A323F5000DE923 /* ButtonModifier.swift in Sources */,
 				E3386380268A2893001B09F2 /* ContentView.swift in Sources */,
+				E32D8DCD26A32F50000DE923 /* AchievementsView.swift in Sources */,
 				E338639B268A5ADA001B09F2 /* StoredValues.swift in Sources */,
+				E32D8DC926A32711000DE923 /* HeaderView.swift in Sources */,
+				E32D8DD126A33606000DE923 /* AchievementsModel.swift in Sources */,
+				E32D8DCB26A328FE000DE923 /* PixelView.swift in Sources */,
+				E32D8DC726A32452000DE923 /* RainbowModifier.swift in Sources */,
 				E338638D268A2D8B001B09F2 /* ColourModel.swift in Sources */,
+				E32D8DBF26A3231F000DE923 /* InfoView.swift in Sources */,
 				E338637E268A2893001B09F2 /* PixelStopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
