@@ -16,12 +16,14 @@
 		E32D8DCB26A328FE000DE923 /* PixelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DCA26A328FE000DE923 /* PixelView.swift */; };
 		E32D8DCD26A32F50000DE923 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DCC26A32F50000DE923 /* AchievementsView.swift */; };
 		E32D8DD126A33606000DE923 /* AchievementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DD026A33606000DE923 /* AchievementsModel.swift */; };
+		E32D8DE426A41F51000DE923 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D8DE326A41F51000DE923 /* PersistentController.swift */; };
 		E338637E268A2893001B09F2 /* PixelStopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338637D268A2893001B09F2 /* PixelStopApp.swift */; };
 		E3386380268A2893001B09F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338637F268A2893001B09F2 /* ContentView.swift */; };
 		E3386382268A2894001B09F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3386381268A2894001B09F2 /* Assets.xcassets */; };
 		E3386385268A2894001B09F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3386384268A2894001B09F2 /* Preview Assets.xcassets */; };
 		E338638D268A2D8B001B09F2 /* ColourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338638C268A2D8B001B09F2 /* ColourModel.swift */; };
 		E338639B268A5ADA001B09F2 /* StoredValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338639A268A5ADA001B09F2 /* StoredValues.swift */; };
+		E34F24A726A422F9008B9859 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E34F24A526A422F9008B9859 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		E32D8DCA26A328FE000DE923 /* PixelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelView.swift; sourceTree = "<group>"; };
 		E32D8DCC26A32F50000DE923 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		E32D8DD026A33606000DE923 /* AchievementsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsModel.swift; sourceTree = "<group>"; };
+		E32D8DE326A41F51000DE923 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
 		E338637A268A2893001B09F2 /* PixelStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338637D268A2893001B09F2 /* PixelStopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelStopApp.swift; sourceTree = "<group>"; };
 		E338637F268A2893001B09F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		E3386386268A2894001B09F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E338638C268A2D8B001B09F2 /* ColourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourModel.swift; sourceTree = "<group>"; };
 		E338639A268A5ADA001B09F2 /* StoredValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredValues.swift; sourceTree = "<group>"; };
+		E34F24A626A422F9008B9859 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			children = (
 				E338638C268A2D8B001B09F2 /* ColourModel.swift */,
 				E32D8DD026A33606000DE923 /* AchievementsModel.swift */,
+				E32D8DE326A41F51000DE923 /* PersistentController.swift */,
+				E34F24A526A422F9008B9859 /* DataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,8 +231,10 @@
 				E3386380268A2893001B09F2 /* ContentView.swift in Sources */,
 				E32D8DCD26A32F50000DE923 /* AchievementsView.swift in Sources */,
 				E338639B268A5ADA001B09F2 /* StoredValues.swift in Sources */,
+				E34F24A726A422F9008B9859 /* DataModel.xcdatamodeld in Sources */,
 				E32D8DC926A32711000DE923 /* HeaderView.swift in Sources */,
 				E32D8DD126A33606000DE923 /* AchievementsModel.swift in Sources */,
+				E32D8DE426A41F51000DE923 /* PersistentController.swift in Sources */,
 				E32D8DCB26A328FE000DE923 /* PixelView.swift in Sources */,
 				E32D8DC726A32452000DE923 /* RainbowModifier.swift in Sources */,
 				E338638D268A2D8B001B09F2 /* ColourModel.swift in Sources */,
@@ -420,6 +428,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E34F24A526A422F9008B9859 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E34F24A626A422F9008B9859 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = E34F24A626A422F9008B9859 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E3386372268A2893001B09F2 /* Project object */;
 }

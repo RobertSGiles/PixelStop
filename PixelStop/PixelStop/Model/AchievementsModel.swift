@@ -6,31 +6,31 @@
 //
 
 import SwiftUI
-
-struct Achievement {
-    var isChecked: Bool
-    var title: String
-}
+import CoreData
 
 struct AchievementsModel {
-    var achievements: [Achievement] = [Achievement(isChecked: false, title: "First"), Achievement(isChecked: false, title: "Second")]
     
-    mutating func updatedAchievements(value: String)
-    {
-        if(value == achievements[0].title) {
-            achievements[0].isChecked = true
-        }
-    }
+//    mutating func updatedAchievements(value: String)
+//    {
+//
+//    }
     
-    func getAchievementsArray() -> [Achievement]? {
-        return self.achievements
-    }
+//    mutating func getAchievementsArray(with request: NSFetchRequest<Achievement> = Achievement.fetchRequest(), predicate: NSPredicate? = nil) -> [Achievement]{
+//
+//        do {
+//            achievementArray = try context.fetch(request)
+//        } catch {
+//            print("Error fetching data from context \(error)")
+//        }
+//
+//        return achievementArray
+//    }
     
     // must fix non colour issue
     mutating func checkWinConditions(colourList: [Color]) {
         if colourList.count > 0 {
             if(colourList[0] == Color.red && colourList[1] == Color.red) {
-                updatedAchievements(value: "First")
+                //updatedAchievements(value: "First")
             }
         }
     }
