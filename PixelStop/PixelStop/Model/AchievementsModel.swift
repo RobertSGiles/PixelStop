@@ -10,28 +10,34 @@ import CoreData
 
 struct AchievementsModel {
     
-//    mutating func updatedAchievements(value: String)
-//    {
-//
-//    }
+    var achievementsArray: [Achievement] = []
+    let defaults = UserDefaults.standard
     
-//    mutating func getAchievementsArray(with request: NSFetchRequest<Achievement> = Achievement.fetchRequest(), predicate: NSPredicate? = nil) -> [Achievement]{
-//
-//        do {
-//            achievementArray = try context.fetch(request)
-//        } catch {
-//            print("Error fetching data from context \(error)")
-//        }
-//
-//        return achievementArray
-//    }
+    mutating func getAchievementsArray() -> [Achievement] {
+        if let savedAchievements = defaults.object(forKey: "user") as? Data {
+            let decoder = JSONDecoder()
+            if let userAchievements = try? decoder.decode([Achievement].self, from: savedAchievements) {
+                achievementsArray = userAchievements
+            }
+        }
+        return achievementsArray
+    }
     
     // must fix non colour issue
     mutating func checkWinConditions(colourList: [Color]) {
         if colourList.count > 0 {
-            if(colourList[0] == Color.red && colourList[1] == Color.red) {
-                //updatedAchievements(value: "First")
+            if(true) {
+                updatedAchievements()
             }
+        }
+    }
+    
+    mutating func updatedAchievements( ) {
+        var setUserDefaults = getAchievementsArray()
+        setUserDefaults[0].isCompleted = true
+        let encoder = JSONEncoder()
+        if let encodedUser = try? encoder.encode(setUserDefaults) {
+            defaults.set(encodedUser, forKey: "user")
         }
     }
 }

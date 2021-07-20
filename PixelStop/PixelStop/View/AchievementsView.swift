@@ -48,18 +48,13 @@ struct AchievementsView_Preview: PreviewProvider {
 
 struct AchievementsListView: View {
     @Environment(\.managedObjectContext) var viewContext
+    var achievementsArray = achievementModel.getAchievementsArray()
     
-    @FetchRequest(sortDescriptors: [])
-    
-    private var achieveList: FetchedResults<AchievementList>
-    
+    // Make this a foreach loop
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            List {
-                ForEach(achieveList) { achieve in
-                    AchievementRowView(Title: achieve.title!, Completed: achieve.isChecked)
-                }
-            }
+            AchievementRowView(Title: achievementsArray[0].title, Completed:  achievementsArray[0].isCompleted)
+            AchievementRowView(Title: achievementsArray[1].title, Completed:  achievementsArray[1].isCompleted)
         }
     }
 }
@@ -71,7 +66,7 @@ struct AchievementRowView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(Title).foregroundColor(Color.gray)
+                Text(Title)
                 Spacer()
                 if Completed {
                     Image(systemName: "checkmark.rectangle")
