@@ -9,14 +9,10 @@ import Foundation
 import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        let setUserDefaults = [Achievement(title: "First", isCompleted: false), Achievement(title: "Second", isCompleted: false)]
-        let encoder = JSONEncoder()
-        if let encodedUser = try? encoder.encode(setUserDefaults) {
-            UserDefaults.standard.set(encodedUser, forKey: "user")
-        }
-        
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool { 
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        UserDefaults.standard.removeObject(forKey: "achievements")
+        UserDefaults.standard.synchronize()
         return true
     }
 }

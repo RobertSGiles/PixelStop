@@ -48,13 +48,15 @@ struct AchievementsView_Preview: PreviewProvider {
 
 struct AchievementsListView: View {
     @Environment(\.managedObjectContext) var viewContext
-    var achievementsArray = achievementModel.getAchievementsArray()
+    var allAchievements = achievementModel.getAllAchievements()
     
     // Make this a foreach loop
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            AchievementRowView(Title: achievementsArray[0].title, Completed:  achievementsArray[0].isCompleted)
-            AchievementRowView(Title: achievementsArray[1].title, Completed:  achievementsArray[1].isCompleted)
+            AchievementRowView(Title: allAchievements[0].title, Completed:  allAchievements[0].isCompleted)
+            AchievementRowView(Title: allAchievements[1].title, Completed:  allAchievements[1].isCompleted)
+            AchievementRowView(Title: allAchievements[2].title, Completed:  allAchievements[2].isCompleted)
+            AchievementRowView(Title: allAchievements[3].title, Completed:  allAchievements[3].isCompleted)
         }
     }
 }

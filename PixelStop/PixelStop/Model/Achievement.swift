@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Achievement: Codable {
+    var id: Int
     var title: String
     var isCompleted: Bool
 }
